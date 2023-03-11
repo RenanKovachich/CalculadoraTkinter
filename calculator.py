@@ -4,7 +4,9 @@ class Calculator:
     def __init__(self, master):
         master.title("Caculadora")
         master.geometry('357x420+0+0')
-        master.config(bg='gray')
+        
+        master.config(bg='white')
+        
         master.resizable(False, False)
         
         self.equation = StringVar()
@@ -21,8 +23,8 @@ class Calculator:
         Button(width=11, height=4, text='5', relief='flat', bg='white', command=lambda:self.show(5)).place(x=90,y=200)
         Button(width=11, height=4, text='6', relief='flat', bg='white', command=lambda:self.show(6)).place(x=180,y=200)
         Button(width=11, height=4, text='7', relief='flat', bg='white', command=lambda:self.show(7)).place(x=0,y=275)
-        Button(width=11, height=4, text='8', relief='flat', bg='white', command=lambda:self.show(8)).place(x=180,y=275)
-        Button(width=11, height=4, text='9', relief='flat', bg='white', command=lambda:self.show(9)).place(x=90,y=275)
+        Button(width=11, height=4, text='8', relief='flat', bg='white', command=lambda:self.show(8)).place(x=90,y=275)
+        Button(width=11, height=4, text='9', relief='flat', bg='white', command=lambda:self.show(9)).place(x=180,y=275)
         Button(width=11, height=4, text='0', relief='flat', bg='white', command=lambda:self.show(0)).place(x=90,y=350)
         Button(width=11, height=4, text='.', relief='flat', bg='white', command=lambda:self.show('.')).place(x=90,y=350)
         Button(width=11, height=4, text='+', relief='flat', bg='white', command=lambda:self.show('+')).place(x=270,y=275)
